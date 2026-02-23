@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Delight Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h2>Sweet Delight Bakery</h2>
+    </header>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="#cart">Your Cart</a>
+        <a href="category.html">Category</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Freshly Baked Happiness 🍞</h1>
+    </section>
+
+    <section class="products">
+        <h2>Our Popular Items</h2>
+        <div class="product-container">
+
+            <div class="card">
+                <img src="Image/cup_cake.jpg" alt="Cake">
+                <h3>Chocolate Cake</h3>
+                <p>₹450</p>
+                <button onclick="addToCart('Chocolate Cake',500)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="image/cake.jpg" alt="Cupcake">
+                <h3>Strawberry Cupcake</h3>
+                <p>₹120</p>
+                <button onclick="addToCart('Strawberry Cake',120)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="image/Bread.jpg" alt="Bread">
+                <h3>Fresh Bread</h3>
+                <p>₹60</p>
+                <button onclick="addToCart('Fresh Bread',60)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image/cake2.jpg" alt="Bread">
+                <h3>Brownie Caramel Salted 4 Pack</h3>
+                <p>₹70</p>
+                <button onclick="addToCart('Brownie Caramel',70)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Image/cake1.jpg" alt="Bread">
+                <h3>Chocolate cake</h3>
+                <p>₹600</p>
+                <button onclick="addToCart('Chocolate cake',600)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image/cookie.jpg" alt="Bread">
+                <h3> Brown Butter Chocolate Chunk Cookie</h3>
+                <p>₹80</p>
+                <button onclick="addToCart(' Chocolate Chunk Cookie',80)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image/pastery.jpg" alt="Bread">
+                <h3> Pastry Turnover Apple</h3>
+                <p>₹120</p>
+                <button onclick="addToCart('Pastry Turnover Apple',120)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image/chocolate.jpg" alt="Bread">
+                <h3>Ferrero Rocher</h3>
+                <p>₹299</p>
+                <button onclick="addToCart('Ferrero Rochere',299)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="cart-message" id="cartMessage">
+        Item Added to Cart!
+    </div>
+
+
+
+    <div class="cart-section" id="cart">
+        <h2>Your Cart 🛒</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+
+    <footer>
+        <p>© 2026 Sweet Delight Bakery | All Rights Reserved</p>
+    </footer>
+    <script src="jscript.js"></script>
+
+
+</body>
+
+</html>
